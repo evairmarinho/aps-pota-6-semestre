@@ -25,8 +25,8 @@ public class main {
         // mostraVetor(comparacaoVetores("insertionSort",vetoresTam5));
         
     }
-// Método que gera matriz de 'quantidadeVetores' linhas e 'tamVetor' colunas.
 
+// Método que gera matriz de 'quantidadeVetores' linhas e 'tamVetor' colunas.
     public static int[][] geraVetores(int tamVetor, int quantidadeVetores) {
         Random random = new Random();
         int vetores[][] = new int[quantidadeVetores][tamVetor];
@@ -78,8 +78,6 @@ public class main {
         }
         return vetor;
     }
-// TODO - ALTERAR CODE - IMPLEMENTAR MÉTODO COM MESMO NOME DO MEU JEITO
-
     
     
     // SUBSTITUIR IMPLEMENTAÇÃO
