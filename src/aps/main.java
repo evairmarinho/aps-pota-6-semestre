@@ -9,7 +9,7 @@ import java.util.Random;
 public class main {
 
     public static void main(String[] args) {
-        // Criamos uma matriz de vetores para cada requisito do trabalho
+         // Criamos uma matriz de vetores para cada requisito do trabalho
         int vetoresTam5[][] = geraVetores(5, 50);
         int vetoresTam10[][] = geraVetores(10, 50);
         int vetoresTam100[][] = geraVetores(100, 50);
