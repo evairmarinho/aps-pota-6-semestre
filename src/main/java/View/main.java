@@ -1,4 +1,9 @@
-package aps;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package view;
 
 import java.util.Random;
 
@@ -9,7 +14,7 @@ import java.util.Random;
 public class main {
 
     public static void main(String[] args) {
-         // Criamos uma matriz de vetores para cada requisito do trabalho
+        // Criamos uma matriz de vetores para cada requisito do trabalho
         int vetoresTam5[][] = geraVetores(5, 50);
         int vetoresTam10[][] = geraVetores(10, 50);
         int vetoresTam100[][] = geraVetores(100, 50);
@@ -25,8 +30,8 @@ public class main {
         // mostraVetor(comparacaoVetores("insertionSort",vetoresTam5));
         
     }
-
 // Método que gera matriz de 'quantidadeVetores' linhas e 'tamVetor' colunas.
+
     public static int[][] geraVetores(int tamVetor, int quantidadeVetores) {
         Random random = new Random();
         int vetores[][] = new int[quantidadeVetores][tamVetor];
@@ -78,6 +83,8 @@ public class main {
         }
         return vetor;
     }
+// TODO - ALTERAR CODE - IMPLEMENTAR MÉTODO COM MESMO NOME DO MEU JEITO
+
     
     
     // SUBSTITUIR IMPLEMENTAÇÃO
