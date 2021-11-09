@@ -91,18 +91,32 @@ public class AlgsOrdenacao {
         return vetores;
     }
 
+    
+     public double calculaMedia (ArrayList<Integer> array) {
+        double media = 0;
+        int tam = array.size();
+        for (int i = 0; i < tam; i ++) {
+           media += array.get(i);
+           System.out.print(array.get(i)+", ");        
+        }
+        System.out.println("");
+        return media/tam;
+    }
+    
    // Retorna ArrayList com quantidade de comparações realizadas por Vetor
     public ArrayList<Integer> comparacaoVetores(String algOrdenacao, int[][] vetores) {
      
         for (int i = 0; i < vetores.length; i++) {
-
+            
             if (algOrdenacao.equals(this.algsOrdenacao[1])) {
                 comparacoes.add(this.insertionSort(vetores[i].clone(), true, i + 1)[0]);
             }
+            
             if (algOrdenacao.equals(this.algsOrdenacao[0])) {
                 comparacoes.add(this.bubbleSort(vetores[i].clone(), true, i + 1)[0]);
             }
         }
+        
         return this.comparacoes;
     }
 }

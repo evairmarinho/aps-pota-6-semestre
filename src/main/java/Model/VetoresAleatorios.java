@@ -10,7 +10,7 @@ public class VetoresAleatorios {
     
     // Método que gera matriz de 'quantidadeVetores' linhas e 'tamVetor' colunas.
     public int[][] geraVetores(int tamVetor, int quantidadeVetores) {
-        Random random = new Random();
+        Random random = new Random(10);
         int vetores[][] = new int[quantidadeVetores][tamVetor];
         for (int i = 0; i < quantidadeVetores; i++) {
             for (int j = 0; j < tamVetor; j++) {
@@ -21,6 +21,7 @@ public class VetoresAleatorios {
     }
     
     
+   
 // Método que imprime matriz
     public void imprimeVetoresAleatorios(int[][] vetores) {
         for (int i = 0; i < vetores.length; i++) {
